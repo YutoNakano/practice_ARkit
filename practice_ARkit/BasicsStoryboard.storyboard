@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zVN-YU-9cA">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basics View Controller-->
+        <scene sceneID="4QA-5d-BCz">
+            <objects>
+                <viewController id="zVN-YU-9cA" customClass="BasicsViewController" customModule="practice_ARkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tjc-cu-uVM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJT-QK-czh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aJT-QK-czh" firstAttribute="top" secondItem="Tjc-cu-uVM" secondAttribute="top" id="1Hd-Yc-Ved"/>
+                            <constraint firstItem="aJT-QK-czh" firstAttribute="leading" secondItem="AUs-sP-zky" secondAttribute="leading" id="2gm-r1-Y4E"/>
+                            <constraint firstAttribute="bottom" secondItem="aJT-QK-czh" secondAttribute="bottom" id="OPO-nG-TFR"/>
+                            <constraint firstItem="aJT-QK-czh" firstAttribute="trailing" secondItem="AUs-sP-zky" secondAttribute="trailing" id="ced-Y6-bG4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AUs-sP-zky"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="aJT-QK-czh" id="xkq-d3-z5i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2R7-Nz-n6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+</document>
